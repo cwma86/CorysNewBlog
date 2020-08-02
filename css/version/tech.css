@@ -44,8 +44,12 @@ h5 {
 }
 
 .header .navbar-nav .has-submenu ul {
-    margin-top: 17px !important
+    position: fixed;
+
 }
+html body {
+ padding-top: 50px;
+}}
 
 .header .navbar-nav .has-submenu.menu-large ul {
     margin-top: 0px !important;
@@ -197,7 +201,7 @@ h5 {
 }
 
 .footer {
-    background-color: #000000;
+    background-color: #708090;
     background-image: none;
 }
 
@@ -206,11 +210,11 @@ h5 {
 }
 
 .footer p {
-    color: #999999 !important;
+    color: #000000 !important;
 }
 
 .footer a {
-    color: #999999 !important;
+    color: #fffefe !important;
 }
 
 .footer .link-widget li {
