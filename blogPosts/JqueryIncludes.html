@@ -14,30 +14,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
     <!-- Design fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
 
     <!-- FontAwesome Icons core CSS -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
 
     <!-- Responsive styles for this template -->
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
 
     <!-- Colors for this template -->
-    <link href="css/colors.css" rel="stylesheet">
+    <link href="../css/colors.css" rel="stylesheet">
 
     <!-- Version Tech CSS for this template -->
-    <link href="css/version/tech.css" rel="stylesheet">
+    <link href="../css/version/tech.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -48,25 +44,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
         $(function(){
-            $("#nav").load("commonPageSections/nav.html");
+            $("#nav").load("/CorysNewBlog/commonPageSections/nav.html");
         });
     </script>
     <!-- Load the common side pan -->
     <script>
         $(function(){
-            $("#sidePane").load("commonPageSections/rightSidebar.html");
+            $("#sidePane").load("/CorysNewBlog/commonPageSections/rightSidebar.html");
         });
     </script>
     <!-- Load the common footer -->
     <script>
         $(function(){
-            $("#footer").load("commonPageSections/footer.html");
+            $("#footer").load("/CorysNewBlog/commonPageSections/footer.html");
         });
     </script>
     <!--generic Blog Post Format -->
     <script>
         $(function(){
-            $("#blogPost").load("commonPageSections/blogPost.html");
+            $("#blogPost").load("/CorysNewBlog/commonPageSections/blogPost.html");
         });
     </script>
 </head>
@@ -84,7 +80,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item active">Home</li>
-                            <li class="breadcrumb-item"><a href="AboutMe.html">About Me</a></li>
+                            <li class="breadcrumb-item"><a href="/CorysNewBlog/AboutMe.html">About Me</a></li>
                         </ol>
                     </div><!-- end col -->
                 </div><!-- end row -->
@@ -93,40 +89,32 @@
 
         <!-- Enter Blog post contents -->
         <script>
-                function changeText()
-                {
-                    if(document.getElementById('boldStuff').innerHTML.localeCompare('party dude') )
-                    {
-                        tempVar = document.getElementById('boldStuff').innerHTML;
-                        document.getElementById('boldStuff').innerHTML = 'party dude';
-                    }
-                    else
-                    {
-                            document.getElementById('boldStuff').innerHTML = tempVar;
-                    }
-                }
                 var blogContent = '<div class="blog-box row">'+
-                                    '<div class="col-md-4">'+
+                                    '<div class="col-lg-3">'+
                                         '<div class="post-media">'+
                                             '<a href="#" title="">'+
-                                            '<img src="images/HelloWorld.PNG" alt="" class="img-fluid">'+
+                                            '<img src="/CorysNewBlog/images/blogPostImages/Jquery.png" alt="" class="img-fluid">'+
                                             '<div class="hovereffect"></div>'+
                                             '</a>'+
                                         '</div><!-- end media -->'+
                                     '</div><!-- end col -->' +
-                                    '<div class="blog-meta big-meta col-md-8">'+
-                                        '<h4><a href="#" title="">My First Post</a></h4>'+
-                                        '<p>Hello World! This is my first post to this new blog </p>'+
-                                        '<p>Welcome to the site <b id=\'boldStuff\'>dude</b> </p>'+
-                                        '<input type=\'button\' onclick=\'changeText()\' value=\'do you like to party?\'/>'+
+                                    '<div class="blog-meta big-meta col-lg-6">'+
+                                        '<h4><p>Using Jquery to reduce duplication</p></h4>'+
+                                        '<p>' +
+                                            'This post will discuss how to use Jquery to reduce the amount of duplicate HTML ' +
+                                            'throughout your website. This is done using the Jquery .load function to replace'+
+                                            'common blocks of HTML throughout your website'+
+                                        '</p>'+
+                                        '<p>' +
+                                            'For example, I did this with the navigation pane, side bar, and footer of my website' +
+                                        '</p>'+
                                     '</body>'+
                                 '</html>'+
-                                '<small><a href="#" title="">02 August, 2020</a></small>'+
+                                '<small><a href="#" title="">07 August, 2020</a></small>'+
                                 '</div><!-- end meta -->'+
                                 '</div><!-- end blog-box -->';
         </script>
         <div id="blogPost"></div>
-
         <!-- Include the footer pane -->
         <div id="footer"></div>
 

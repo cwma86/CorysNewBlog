@@ -9,7 +9,7 @@
 
 /**************************************
     Table of Content
-    
+
     1. BASIC
     2. HEADER
     3. SECTION
@@ -19,7 +19,7 @@
     7. WIDGETS
 **************************************/
 
-/* BASIC 
+/* BASIC
 **************************************/
 
 body {
@@ -130,7 +130,7 @@ a {
 }
 
 
-/* HEADER 
+/* HEADER
 **************************************/
 
 .header {
@@ -382,10 +382,6 @@ div.tab button:hover {
     display: block;
 }
 
-.header .navbar-nav .has-submenu.menu-large ul li {
-    background: url(images/menubg.jpg) repeat-y center center #ffffff !important;
-}
-
 .tab-details {
     padding: 0;
 }
@@ -596,11 +592,6 @@ div.tab button:hover {
     padding: 0 0 0.5rem;
 }
 
-.footer {
-    padding: 4rem 0 4rem;
-    background: url(images/footer.png) repeat-x center bottom #edeff2;
-}
-
 .footer.wb {
     background-color: #ffffff;
 }
@@ -699,7 +690,7 @@ div.tab button:hover {
 }
 
 
-/* PAGES 
+/* PAGES
 **************************************/
 
 .notfound h2 {
@@ -833,7 +824,7 @@ div.tab button:hover {
 }
 
 
-/* BLOG 
+/* BLOG
 **************************************/
 
 .carousel-indicators li {
@@ -1265,10 +1256,6 @@ hr.invis3 {
     opacity: 0;
 }
 
-.hovereffect span.videohover::before {
-    content: url(images/videohover.png);
-}
-
 .blog-list .blog-meta.big-meta h4 {
     margin-left: -20%;
     margin-top: 1rem;
@@ -1320,7 +1307,7 @@ hr.invis3 {
 }
 
 
-/* WIDGETS 
+/* WIDGETS
 **************************************/
 
 .sidebar .widget {
