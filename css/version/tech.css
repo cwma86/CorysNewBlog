@@ -6,7 +6,10 @@
     http://themeforest.net/user/wpdestek
 
 **************************************/
-
+#mapid {
+    height: 600px;
+    width: 600px;
+}
 body {
     background-color: #ffffff;
 }
