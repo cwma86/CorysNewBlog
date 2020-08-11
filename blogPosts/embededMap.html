@@ -44,7 +44,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
         $(function(){
-            $("#nav").load("/CorysNewBlog/commonPageSections/nav.html");
+            $("#nav").load("../commonPageSections/nav.html");
         });
     </script>
     <!-- Load the common side pan -->
@@ -57,12 +57,6 @@
     <script>
         $(function(){
             $("#footer").load("/CorysNewBlog/commonPageSections/footer.html");
-        });
-    </script>
-    <!--generic Blog Post Format -->
-    <script>
-        $(function(){
-            $("#blogPost").load("/CorysNewBlog/commonPageSections/blogPost.html");
         });
     </script>
 
@@ -97,31 +91,59 @@
         </div><!-- end page-title -->
 
         <!-- Enter Blog post contents -->
-        <script>
+        <section class="section ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-list clearfix">
 
-                var blogContent = '<div class="blog-box row">'+
-                                    '<div class="col-lg-3">'+
-                                        '<div class="post-media">'+
-                                            '<a href="#" title="">'+
-                                            '<img src="/CorysNewBlog/images/blogPostImages/Jquery.png" alt="" class="img-fluid">'+
-                                            '<div class="hovereffect"></div>'+
-                                            '</a>'+
-                                        '</div><!-- end media -->'+
-                                    '</div><!-- end col -->' +
-                                    '<div class="blog-meta big-meta col-lg-6">'+
-                                        '<h4><p>Embeding a Leaflet Map</p></h4>'+
-                                        '<p>' +
-                                            'This post will show how to display a leaflet interactive map'+
-                                        '</p>'+
-                                        ' <div id="mapid"></div>' +
-                                    '</div>'+
-                                    '</body>'+
-                                '</html>'+
-                                '<small><a href="#" title="">09 August, 2020</a></small>'+
-                                '</div><!-- end meta -->'+
-                                '</div><!-- end blog-box -->';
-        </script>
-        <div id="blogPost"></div>
+                                <!-- Actual blog post content goes here  -->
+                                <div id="postContent"></div>
+                                <div class="blog-box row">
+                                    <div class="col-lg-3">
+                                        <div class="post-media">
+                                            <a href="#" title="">
+                                                <img src="/CorysNewBlog/images/blogPostImages/leafletLogo.png" alt="" class="img-fluid">
+                                                <div class="hovereffect"></div>
+                                            </a>
+                                        </div><!-- end media -->
+                                    </div><!-- end col -->
+                                    <div class="blog-meta big-meta col-md-6">
+                                        <h4><a href="#" title="">Embeding a Leaflet Map</a></h4>
+                                        <p>This post will show how to display a leaflet interactive map</p>
+                                        <div id="mapid"></div>
+                                        </body>
+                                        </html>
+                                        <small><a href="#" title="">09 August, 2020</a></small>
+                                    </div><!-- end meta -->
+                                </div><!-- end blog-box -->
+                                <hr class="invis">
+
+                            </div><!-- end blog-list -->
+                        </div><!-- end page-wrapper -->
+
+                        <hr class="invis">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-start">
+                                        <li class="page-item">
+                                            <a class="page-link" href="/CorysNewBlog/index.html">Prev</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div id="sidePane"></div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
 
         <!-- Include the footer pane -->
         <div id="footer"></div>
@@ -132,10 +154,11 @@
 
     <!-- Core JavaScript
     ================================================== -->
-    <script src="/CorysNewBlog/js/jquery.min.js"></script>
-    <script src="/CorysNewBlog/js/tether.min.js"></script>
-    <script src="/CorysNewBlog/js/bootstrap.min.js"></script>
-    <script src="/CorysNewBlog/js/custom.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="/CorysNewBlog/js/leafletMap.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 </html>
