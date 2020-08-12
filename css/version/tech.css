@@ -32,26 +32,7 @@ p {
 figure[class="codeBlock"]
 {
     color: rgb(7, 7, 7);
-    background: rgb(144, 144, 144);
-}
-code[class*="language-"],
-pre[class*="language-"]
-{
-    color: rgb(7, 7, 7);
-    background: rgb(209, 209, 209);
-    font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
-    text-align: left;
-    /* white-space: pre; */
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 2;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-    -webkit-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
+    background: rgb(236, 236, 236);
 }
 
 h1,
