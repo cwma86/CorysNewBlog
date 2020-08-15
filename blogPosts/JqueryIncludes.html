@@ -59,6 +59,8 @@
             $("#footer").load("/CorysNewBlog/commonPageSections/footer.html");
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
 </head>
 
 <body>
@@ -92,7 +94,7 @@
                                 <!-- Actual blog post content goes here  -->
                                 <div id="postContent"></div>
                                 <div class="blog-box row">
-                                    <div class="col-md-3">
+                                    <div class="col-lg-6">
                                         <div class="post-media">
                                             <a href="#" title="">
                                                 <img src="/CorysNewBlog/images/blogPostImages/Jquery.png" alt="" class="img-fluid">
@@ -100,7 +102,7 @@
                                             </a>
                                         </div><!-- end media -->
                                     </div><!-- end col -->
-                                    <div class="blog-meta big-meta col-md-6">
+                                    <div class="blog-meta big-meta">
                                         <h4><a href="#" title="">Using Jquery to reduce duplication</a></h4>
                                         <p>This post will discuss how to use Jquery to reduce the amount of duplicate HTML
                                             throughout your website. This is done using the Jquery .load function to replace
@@ -109,6 +111,51 @@
                                         <p>For example, I did this with the navigation pane, side bar, and footer of my website
                                         </p>                                        </body>
                                         </html>
+                                        <figure class="codeBlock">
+                                            <figcaption><b>nav.html</b></figcaption>
+                                            <pre class="prettyprint lang-html">
+&lt;script src="/CorysNewBlog/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;header class="tech-header header"&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse"&gt;
+            &lt;button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"&gt;
+                &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class="navbar-brand" href="/CorysNewBlog/index.html"&gt;&lt;img src="/CorysNewBlog/images/version/mauerSoftware-Logo2-nav.png" alt=""&gt;&lt;/a&gt;
+            &lt;div class="collapse navbar-collapse" id="navbarCollapse"&gt;
+                &lt;ul class="navbar-nav mr-auto"&gt;
+                    &lt;li class="nav-item"&gt;
+                        &lt;a class="nav-link" href="/CorysNewBlog/index.html"&gt;Home&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                        &lt;a class="nav-link" href="/CorysNewBlog/AboutMe.html"&gt;About Me&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/div&gt;&lt;!-- end container-fluid --&gt;
+&lt;/header&gt;&lt;!-- end market-header --&gt;
+                                            </pre>
+                                        </figure>
+
+                                        <figure class="codeBlock">
+                                            <figcaption><b>blogPostTemplate.html</b></figcaption>
+                                            <pre class="prettyprint lang-html">
+&lt;script>
+    &lt;!-- Create a function to load the html content from nav.html -->
+    $(function(){
+        $("#nav").load("/CorysNewBlog/commonPageSections/nav.html");
+    });
+&lt;/script>
+&lt;body>
+    &lt;div id="wrapper">
+        &lt;!-- Insert the html loaded from nav.html -->
+        &lt;div id="nav">&lt;/div>
+    &lt;/div>
+&lt;/body>
+                                            </pre>
+                                        </figure>
                                         <small><a href="#" title="">07 August, 2020</a></small>
                                     </div><!-- end meta -->
                                 </div><!-- end blog-box -->
