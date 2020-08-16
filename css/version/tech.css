@@ -216,6 +216,7 @@ html body {
 }
 
 .footer .widget-title {
+    margin-top: 50px;
     color: #ffffff !important;
 }
 
