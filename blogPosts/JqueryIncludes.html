@@ -70,10 +70,10 @@
         <div class="page-title lb single-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                         <h2><i class="fa fa-star bg-orange"></i>Blog Post <small class="hidden-xs-down hidden-sm-down"></small></h2>
                     </div><!-- end col -->
-                    <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item active">Home</li>
                             <li class="breadcrumb-item"><a href="/CorysNewBlog/AboutMe.html">About Me</a></li>
@@ -87,14 +87,14 @@
         <section class="section ">
             <div class="container ">
                 <div class="row">
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
                             <div class="blog-list clearfix">
 
                                 <!-- Actual blog post content goes here  -->
                                 <div id="postContent"></div>
                                 <div class="blog-box row">
-                                    <div class="col-lg-6">
+                                    <div class="">
                                         <div class="post-media">
                                             <a href="#" title="">
                                                 <img src="/CorysNewBlog/images/blogPostImages/Jquery.png" alt="" class="img-fluid">
@@ -102,15 +102,22 @@
                                             </a>
                                         </div><!-- end media -->
                                     </div><!-- end col -->
-                                    <div class="blog-meta big-meta">
+                                    <div class="blog-meta big-meta col-lg-11 col-md-11">
                                         <h4><a href="#" title="">Using Jquery to reduce duplication</a></h4>
                                         <p>This post will discuss how to use Jquery to reduce the amount of duplicate HTML
                                             throughout your website. This is done using the Jquery .load function to replace
                                             common blocks of HTML throughout your website
                                         </p>
                                         <p>For example, I did this with the navigation pane, side bar, and footer of my website
-                                        </p>                                        </body>
-                                        </html>
+                                            The navigation pane as shown here.
+                                        </p>
+                                        <img src="/CorysNewBlog/images/blogPostImages/jquery_nav_page.PNG" alt="" class="img-fluid">
+                                        <p>While this pane created with only about 25 lines of code (see nav.html below), the template I used
+                                            as the basis for this site had those lines repeated across every page. As I
+                                            am sure you can imagine, this quickly becomes a maintainability nightmare,
+                                            where adding/editing something in the navigation pane requires identical edits
+                                            on everyone of you websites pages.
+                                        </p>
                                         <figure class="codeBlock">
                                             <figcaption><b>nav.html</b></figcaption>
                                             <pre class="prettyprint lang-html">
@@ -179,7 +186,7 @@
                         </div><!-- end row -->
                     </div><!-- end col -->
 
-                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
                         <div id="sidePane"></div>
                     </div><!-- end col -->
                 </div><!-- end row -->
