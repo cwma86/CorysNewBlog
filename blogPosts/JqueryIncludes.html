@@ -18,22 +18,22 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
 
     <!-- FontAwesome Icons core CSS -->
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
 
     <!-- Responsive styles for this template -->
-    <link href="../css/responsive.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
 
     <!-- Colors for this template -->
-    <link href="../css/colors.css" rel="stylesheet">
+    <link href="/css/colors.css" rel="stylesheet">
 
     <!-- Version Tech CSS for this template -->
-    <link href="../css/version/tech.css" rel="stylesheet">
+    <link href="/css/version/tech.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -50,13 +50,13 @@
     <!-- Load the common side pan -->
     <script>
         $(function(){
-            $("#sidePane").load("/CorysNewBlog/commonPageSections/rightSidebar.html");
+            $("#sidePane").load("/commonPageSections/rightSidebar.html");
         });
     </script>
     <!-- Load the common footer -->
     <script>
         $(function(){
-            $("#footer").load("/CorysNewBlog/commonPageSections/footer.html");
+            $("#footer").load("/commonPageSections/footer.html");
         });
     </script>
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
@@ -76,7 +76,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item active">Home</li>
-                            <li class="breadcrumb-item"><a href="/CorysNewBlog/AboutMe.html">About Me</a></li>
+                            <li class="breadcrumb-item"><a href="/AboutMe.html">About Me</a></li>
                         </ol>
                     </div><!-- end col -->
                 </div><!-- end row -->
@@ -97,7 +97,7 @@
                                     <div class="">
                                         <div class="post-media">
                                             <a href="#" title="">
-                                                <img src="/CorysNewBlog/images/blogPostImages/Jquery.png" alt="" class="img-fluid">
+                                                <img src="/images/blogPostImages/Jquery.png" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div><!-- end media -->
@@ -111,7 +111,7 @@
                                         <p>For example, I did this with the navigation pane, side bar, and footer of my website
                                             The navigation pane as shown here.
                                         </p>
-                                        <img src="/CorysNewBlog/images/blogPostImages/jquery_nav_page.PNG" alt="" class="img-fluid">
+                                        <img src="/images/blogPostImages/jquery_nav_page.PNG" alt="" class="img-fluid">
                                         <p>While this pane created with only about 25 lines of code (see nav.html below), the template I used
                                             as the basis for this site had those lines repeated across every page. As I
                                             am sure you can imagine, this quickly becomes a maintainability nightmare,
@@ -121,21 +121,21 @@
                                         <figure class="codeBlock">
                                             <figcaption><b>nav.html</b></figcaption>
                                             <pre class="prettyprint lang-html">
-&lt;script src="/CorysNewBlog/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;script src="/js/bootstrap.min.js"&gt;&lt;/script&gt;
 &lt;header class="tech-header header"&gt;
     &lt;div class="container-fluid"&gt;
         &lt;nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse"&gt;
             &lt;button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"&gt;
                 &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
             &lt;/button&gt;
-            &lt;a class="navbar-brand" href="/CorysNewBlog/index.html"&gt;&lt;img src="/CorysNewBlog/images/version/mauerSoftware-Logo2-nav.png" alt=""&gt;&lt;/a&gt;
+            &lt;a class="navbar-brand" href="/index.html"&gt;&lt;img src="/images/version/mauerSoftware-Logo2-nav.png" alt=""&gt;&lt;/a&gt;
             &lt;div class="collapse navbar-collapse" id="navbarCollapse"&gt;
                 &lt;ul class="navbar-nav mr-auto"&gt;
                     &lt;li class="nav-item"&gt;
-                        &lt;a class="nav-link" href="/CorysNewBlog/index.html"&gt;Home&lt;/a&gt;
+                        &lt;a class="nav-link" href="/index.html"&gt;Home&lt;/a&gt;
                     &lt;/li&gt;
                     &lt;li class="nav-item"&gt;
-                        &lt;a class="nav-link" href="/CorysNewBlog/AboutMe.html"&gt;About Me&lt;/a&gt;
+                        &lt;a class="nav-link" href="/AboutMe.html"&gt;About Me&lt;/a&gt;
                     &lt;/li&gt;
                 &lt;/ul&gt;
 
@@ -152,7 +152,7 @@
 &lt;script>
     &lt;!-- Create a function to load the html content from nav.html -->
     $(function(){
-        $("#nav").load("/CorysNewBlog/commonPageSections/nav.html");
+        $("#nav").load("/commonPageSections/nav.html");
     });
 &lt;/script>
 &lt;body>
@@ -178,7 +178,7 @@
                                 <nav aria-label="Page navigation">
                                     <ul class="pagination justify-content-start">
                                         <li class="page-item">
-                                            <a class="page-link" href="/CorysNewBlog/index.html">Prev</a>
+                                            <a class="page-link" href="/index.html">Prev</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -202,10 +202,10 @@
 
     <!-- Core JavaScript
     ================================================== -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/custom.js"></script>
 
 </body>
 </html>
