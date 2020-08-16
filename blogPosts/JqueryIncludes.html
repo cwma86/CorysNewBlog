@@ -44,7 +44,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
         $(function(){
-            $("#nav").load("/CorysNewBlog/commonPageSections/nav.html");
+            $("#nav").load("../commonPageSections/nav.html");
         });
     </script>
     <!-- Load the common side pan -->
@@ -59,12 +59,8 @@
             $("#footer").load("/CorysNewBlog/commonPageSections/footer.html");
         });
     </script>
-    <!--generic Blog Post Format -->
-    <script>
-        $(function(){
-            $("#blogPost").load("/CorysNewBlog/commonPageSections/blogPost.html");
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
 </head>
 
 <body>
@@ -74,10 +70,10 @@
         <div class="page-title lb single-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                         <h2><i class="fa fa-star bg-orange"></i>Blog Post <small class="hidden-xs-down hidden-sm-down"></small></h2>
                     </div><!-- end col -->
-                    <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item active">Home</li>
                             <li class="breadcrumb-item"><a href="/CorysNewBlog/AboutMe.html">About Me</a></li>
@@ -88,33 +84,115 @@
         </div><!-- end page-title -->
 
         <!-- Enter Blog post contents -->
-        <script>
-                var blogContent = '<div class="blog-box row">'+
-                                    '<div class="col-lg-3">'+
-                                        '<div class="post-media">'+
-                                            '<a href="#" title="">'+
-                                            '<img src="/CorysNewBlog/images/blogPostImages/Jquery.png" alt="" class="img-fluid">'+
-                                            '<div class="hovereffect"></div>'+
-                                            '</a>'+
-                                        '</div><!-- end media -->'+
-                                    '</div><!-- end col -->' +
-                                    '<div class="blog-meta big-meta col-lg-6">'+
-                                        '<h4><p>Using Jquery to reduce duplication</p></h4>'+
-                                        '<p>' +
-                                            'This post will discuss how to use Jquery to reduce the amount of duplicate HTML ' +
-                                            'throughout your website. This is done using the Jquery .load function to replace'+
-                                            'common blocks of HTML throughout your website'+
-                                        '</p>'+
-                                        '<p>' +
-                                            'For example, I did this with the navigation pane, side bar, and footer of my website' +
-                                        '</p>'+
-                                    '</body>'+
-                                '</html>'+
-                                '<small><a href="#" title="">07 August, 2020</a></small>'+
-                                '</div><!-- end meta -->'+
-                                '</div><!-- end blog-box -->';
-        </script>
-        <div id="blogPost"></div>
+        <section class="section ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-list clearfix">
+
+                                <!-- Actual blog post content goes here  -->
+                                <div id="postContent"></div>
+                                <div class="blog-box row">
+                                    <div class="">
+                                        <div class="post-media">
+                                            <a href="#" title="">
+                                                <img src="/CorysNewBlog/images/blogPostImages/Jquery.png" alt="" class="img-fluid">
+                                                <div class="hovereffect"></div>
+                                            </a>
+                                        </div><!-- end media -->
+                                    </div><!-- end col -->
+                                    <div class="blog-meta big-meta col-lg-11 col-md-11">
+                                        <h4><a href="#" title="">Using Jquery to reduce duplication</a></h4>
+                                        <p>This post will discuss how to use Jquery to reduce the amount of duplicate HTML
+                                            throughout your website. This is done using the Jquery .load function to replace
+                                            common blocks of HTML throughout your website
+                                        </p>
+                                        <p>For example, I did this with the navigation pane, side bar, and footer of my website
+                                            The navigation pane as shown here.
+                                        </p>
+                                        <img src="/CorysNewBlog/images/blogPostImages/jquery_nav_page.PNG" alt="" class="img-fluid">
+                                        <p>While this pane created with only about 25 lines of code (see nav.html below), the template I used
+                                            as the basis for this site had those lines repeated across every page. As I
+                                            am sure you can imagine, this quickly becomes a maintainability nightmare,
+                                            where adding/editing something in the navigation pane requires identical edits
+                                            on everyone of you websites pages.
+                                        </p>
+                                        <figure class="codeBlock">
+                                            <figcaption><b>nav.html</b></figcaption>
+                                            <pre class="prettyprint lang-html">
+&lt;script src="/CorysNewBlog/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;header class="tech-header header"&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse"&gt;
+            &lt;button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"&gt;
+                &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class="navbar-brand" href="/CorysNewBlog/index.html"&gt;&lt;img src="/CorysNewBlog/images/version/mauerSoftware-Logo2-nav.png" alt=""&gt;&lt;/a&gt;
+            &lt;div class="collapse navbar-collapse" id="navbarCollapse"&gt;
+                &lt;ul class="navbar-nav mr-auto"&gt;
+                    &lt;li class="nav-item"&gt;
+                        &lt;a class="nav-link" href="/CorysNewBlog/index.html"&gt;Home&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                        &lt;a class="nav-link" href="/CorysNewBlog/AboutMe.html"&gt;About Me&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/div&gt;&lt;!-- end container-fluid --&gt;
+&lt;/header&gt;&lt;!-- end market-header --&gt;
+                                            </pre>
+                                        </figure>
+
+                                        <figure class="codeBlock">
+                                            <figcaption><b>blogPostTemplate.html</b></figcaption>
+                                            <pre class="prettyprint lang-html">
+&lt;script>
+    &lt;!-- Create a function to load the html content from nav.html -->
+    $(function(){
+        $("#nav").load("/CorysNewBlog/commonPageSections/nav.html");
+    });
+&lt;/script>
+&lt;body>
+    &lt;div id="wrapper">
+        &lt;!-- Insert the html loaded from nav.html -->
+        &lt;div id="nav">&lt;/div>
+    &lt;/div>
+&lt;/body>
+                                            </pre>
+                                        </figure>
+                                        <small><a href="#" title="">07 August, 2020</a></small>
+                                    </div><!-- end meta -->
+                                </div><!-- end blog-box -->
+                                <hr class="invis">
+
+                            </div><!-- end blog-list -->
+                        </div><!-- end page-wrapper -->
+
+                        <hr class="invis">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-start">
+                                        <li class="page-item">
+                                            <a class="page-link" href="/CorysNewBlog/index.html">Prev</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+                        <div id="sidePane"></div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+
         <!-- Include the footer pane -->
         <div id="footer"></div>
 

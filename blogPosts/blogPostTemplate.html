@@ -59,12 +59,6 @@
             $("#footer").load("/CorysNewBlog/commonPageSections/footer.html");
         });
     </script>
-    <!--generic Blog Post Format -->
-    <script>
-        $(function(){
-            $("#blogPost").load("/CorysNewBlog/commonPageSections/blogPost.html");
-        });
-    </script>
 </head>
 
 <body>
@@ -74,10 +68,10 @@
         <div class="page-title lb single-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                         <h2><i class="fa fa-star bg-orange"></i>Blog Post <small class="hidden-xs-down hidden-sm-down"></small></h2>
                     </div><!-- end col -->
-                    <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item active">Home</li>
                             <li class="breadcrumb-item"><a href="/CorysNewBlog/AboutMe.html">About Me</a></li>
@@ -88,11 +82,59 @@
         </div><!-- end page-title -->
 
         <!-- Enter Blog post contents -->
-        <script>
-            // Define the blog post content here
-                // var blogContent = '';
-        </script>
-        <div id="blogPost"></div>
+        <section class="section ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-list clearfix">
+
+                                <!-- Actual blog post content goes here  -->
+                                <div id="postContent"></div>
+                                <div class="blog-box row">
+                                    <div class="">
+                                        <div class="post-media">
+                                            <a href="#" title="">
+                                                <img src="/CorysNewBlog/images/blogPostImages/HelloWorld.PNG" alt="" class="img-fluid">
+                                                <div class="hovereffect"></div>
+                                            </a>
+                                        </div><!-- end media -->
+                                    </div><!-- end col -->
+                                    <div class="blog-meta big-meta  col-lg-11 col-md-11">
+                                        <h4><a href="#" title="">Template header</a></h4>
+                                        <p>Template post contents</p>
+                                        </body>
+                                        </html>
+                                        <small><a href="#" title="">01 August, 2020</a></small>
+                                    </div><!-- end meta -->
+                                </div><!-- end blog-box -->
+                                <hr class="invis">
+
+                            </div><!-- end blog-list -->
+                        </div><!-- end page-wrapper -->
+
+                        <hr class="invis">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-start">
+                                        <li class="page-item">
+                                            <a class="page-link" href="/CorysNewBlog/index.html">Prev</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+                        <div id="sidePane"></div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+
         <!-- Include the footer pane -->
         <div id="footer"></div>
 

@@ -59,7 +59,15 @@
             $("#footer").load("/CorysNewBlog/commonPageSections/footer.html");
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+    <!-- Embeded map from leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
 </head>
 
 <body>
@@ -83,23 +91,6 @@
         </div><!-- end page-title -->
 
         <!-- Enter Blog post contents -->
-
-        <!-- Script for the post -->
-        <script>
-            function changeText()
-            {
-                if(document.getElementById('boldStuff').innerHTML.localeCompare('party dude') )
-                {
-                    tempVar = document.getElementById('boldStuff').innerHTML;
-                    document.getElementById('boldStuff').innerHTML = 'party dude';
-                }
-                else
-                {
-                        document.getElementById('boldStuff').innerHTML = tempVar;
-                }
-            }
-        </script>
-
         <section class="section ">
             <div class="container ">
                 <div class="row">
@@ -113,47 +104,18 @@
                                     <div class="">
                                         <div class="post-media">
                                             <a href="#" title="">
-                                                <img src="/CorysNewBlog/images/blogPostImages/JavaScript-logo.png" alt="" class="img-fluid">
+                                                <img src="/CorysNewBlog/images/blogPostImages/leafletLogo.png" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div><!-- end media -->
                                     </div><!-- end col -->
-                                    <div class="blog-meta big-meta col-lg-11 col-md-11">
-                                        <h4><a href="#" title="">Implementing a simple Java script function</a></h4>
-                                        <p>This post goes over how to implement a simple java script function that modifies the page contents
-                                            based on user input.
-                                        </p>
-                                        <p>Welcome to the site <b id='boldStuff'>dude</b> </p>
-                                        <p></p>
-                                        <input type='button' onclick='changeText()' value='do you like to party?'/>
-                                        <p></p>
-                                        <figure class="codeBlock">
-                                            <figcaption><b>Party Dude Java Script Button</b></figcaption>
-                                            <pre class="prettyprint lang-html">
-&lt;!-- Create a function that alters the string displayed --&gt;
-&lt;script&gt;
-    function changeText()
-    {
-        if(document.getElementById('boldStuff').innerHTML.localeCompare('party dude') )
-        {
-            tempVar = document.getElementById('boldStuff').innerHTML;
-            document.getElementById('boldStuff').innerHTML = 'party dude';
-        }
-        else
-        {
-                document.getElementById('boldStuff').innerHTML = tempVar;
-        }
-    }
-&lt;/script&gt;
-
-&lt;!-- Display the string that will be changed --&gt;
-&lt;p&gt;Welcome to the site &lt;b id='boldStuff'&gt;dude&lt;/b&gt; &lt;/p&gt;
-
-&lt;!-- Create the button and call for the string change on click --&gt;
-&lt;input type='button' onclick='changeText()' value='do you like to party?'/&gt;"
-                                            </pre>
-                                        </figure>
-                                        <small><a href="#" title="">02 August, 2020</a></small>
+                                    <div class="blog-meta big-meta  col-lg-11 col-md-11">
+                                        <h4><a href="#" title="">Embeding a Leaflet Map</a></h4>
+                                        <p>This post will show how to display a leaflet interactive map</p>
+                                        <div id="mapid"></div>
+                                        </body>
+                                        </html>
+                                        <small><a href="#" title="">09 August, 2020</a></small>
                                     </div><!-- end meta -->
                                 </div><!-- end blog-box -->
                                 <hr class="invis">
@@ -195,6 +157,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="/CorysNewBlog/js/leafletMap.js"></script>
     <script src="js/custom.js"></script>
 
 </body>
