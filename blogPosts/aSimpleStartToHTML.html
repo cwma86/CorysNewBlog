@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,6 +60,8 @@
         });
     </script>
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+    <!-- google ad sense -->
     <script data-ad-client="ca-pub-7100546225531904" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
@@ -84,23 +86,6 @@
         </div><!-- end page-title -->
 
         <!-- Enter Blog post contents -->
-
-        <!-- Script for the post -->
-        <script>
-            function changeText()
-            {
-                if(document.getElementById('boldStuff').innerHTML.localeCompare('party dude') )
-                {
-                    tempVar = document.getElementById('boldStuff').innerHTML;
-                    document.getElementById('boldStuff').innerHTML = 'party dude';
-                }
-                else
-                {
-                        document.getElementById('boldStuff').innerHTML = tempVar;
-                }
-            }
-        </script>
-
         <section class="section ">
             <div class="container ">
                 <div class="row">
@@ -114,46 +99,113 @@
                                     <div class="">
                                         <div class="post-media">
                                             <a href="#" title="">
-                                                <img src="/images/blogPostImages/JavaScript-logo.png" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div><!-- end media -->
                                     </div><!-- end col -->
-                                    <div class="blog-meta big-meta col-lg-11 col-md-11">
-                                        <h4><a href="#" title="">Implementing a simple Java script function</a></h4>
-                                        <p>This post goes over how to implement a simple java script function that modifies the page contents
-                                            based on user input.
+                                    <div class="blog-meta big-meta  col-lg-11 col-md-11">
+                                        <h4><a href="#" title="">A Simple Start to HTML</a></h4>
+                                        <p>This post is intended to show users how to create a very basic HTML page
                                         </p>
-                                        <p>Welcome to the site <b id='boldStuff'>dude</b> </p>
-                                        <p></p>
-                                        <input type='button' onclick='changeText()' value='do you like to party?'/>
-                                        <p></p>
+
+                                        <!-- Basic structure -->
+                                        <h5>Basic structure</h5>
+                                        <p>I will start off by showing the basic structure for every page
+                                        </p>
                                         <figure class="codeBlock">
-                                            <figcaption><b>Party Dude Java Script Button</b></figcaption>
+                                            <figcaption><b>basic html page structure</b></figcaption>
                                             <pre class="prettyprint lang-html">
-&lt;!-- Create a function that alters the string displayed --&gt;
-&lt;script&gt;
-    function changeText()
-    {
-        if(document.getElementById('boldStuff').innerHTML.localeCompare('party dude') )
-        {
-            tempVar = document.getElementById('boldStuff').innerHTML;
-            document.getElementById('boldStuff').innerHTML = 'party dude';
-        }
-        else
-        {
-                document.getElementById('boldStuff').innerHTML = tempVar;
-        }
-    }
-&lt;/script&gt;
-
-&lt;!-- Display the string that will be changed --&gt;
-&lt;p&gt;Welcome to the site &lt;b id='boldStuff'&gt;dude&lt;/b&gt; &lt;/p&gt;
-
-&lt;!-- Create the button and call for the string change on click --&gt;
-&lt;input type='button' onclick='changeText()' value='do you like to party?'/&gt;"
-                                            </pre>
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;!-- stuff you need for your site -->
+&lt;/head>
+&lt;body>
+    &lt;!-- the contents of your site -->
+&lt;/body>
+&lt;/html>                                  </pre>
                                         </figure>
+
+                                        <!-- Basic commands  -->
+                                        <h5>Basic HTML commands</h5>
+                                        <p>Next we will show the basic heading &lt;h1> paragraph &lt;p> and image &lt;img>
+                                        </p>
+                                        <figure class="codeBlock">
+                                            <figcaption><b>demoing some basic commands</b></figcaption>
+                                            <pre class="prettyprint lang-html">
+&lt;body>
+    &lt;!-- the contents of your site -->
+    &lt;h1> This is a heading&lt;/h1>
+    &lt;p> This is a paragraph&lt;/p>
+    &lt;img src="/images/blogPostImages/HelloWorld.PNG">&lt;/img>
+&lt;/body>                                  </pre>
+                                        </figure>
+                                        <p>This provides you with</p>
+                                        <figure class="codeBlock">
+                                            <figcaption><b>web page result</b></figcaption>
+                                        <img src="/images/blogPostImages/basicHTMLCommands.PNG">
+                                        </figure>
+
+                                        <!-- Basic Color  -->
+                                        <h5>Basic HTML coloring</h5>
+                                        <p>Next I want to touch on changing background and font color
+                                        </p>
+                                        <figure class="codeBlock">
+                                            <figcaption><b>demoing some basic commands</b></figcaption>
+                                            <pre class="prettyprint lang-html">
+&lt;body style="background-color:rgb(238, 238, 238)">
+    &lt;!-- the contents of your site -->
+    &lt;h1 style="color:brown; background-color:powderblue;"> This is a heading&lt;/h1>
+    &lt;p>Paragraph text here&lt;/p>
+&lt;/body>                                  </pre>
+                                        </figure>
+                                        <p>This changes the back ground color and font color for both the
+                                            entire page and the the individual heading
+                                        </p>
+                                        <figure class="codeBlock">
+                                            <figcaption><b>web page result</b></figcaption>
+                                        <img src="/images/blogPostImages/basicHTMLColoring.PNG">
+                                        </figure>
+
+                                        <!-- Boost strap -->
+                                        <h5>Using the Bootstrap framework</h5>
+                                        <p>Next we will include the <a href="https://getbootstrap.com/">bootstrap framework</a>bootstrap framework
+                                            to add some aesthetics to our site by using its built in color schemes and grid layout. I highly
+                                            reccomend researching the bootstrap documentation to learn more about the functionality it has to offer.
+                                        </p>
+                                        <figure class="codeBlock">
+                                            <figcaption><b>adding and using bootstrap</b></figcaption>
+                                            <pre class="prettyprint lang-html">
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;!-- stuff you need for your site -->
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+&lt;/head>
+&lt;body>
+    &lt;!-- the contents of your site -->
+    &lt;!-- Create a primary heading for your heading -->
+    &lt;h1 class="container-fluid bg-primary"> This is a heading&lt;/h1>
+    &lt;!-- Create a row and place your first paragraph and image next to eachother -->
+    &lt;div class="row">
+    &lt;div class="col-sm">
+                &lt;p> This is a paragraph&lt;/h1>
+                &lt;/div>
+                &lt;div class="col-sm">
+    &lt;img src="/images/blogPostImages/HelloWorld.PNG">&lt;/img>
+    &lt;/div>
+&lt;/body>                                  </pre>
+                                        </figure>
+
+                                    </figure>
+                                    <p>This uses the boot strap formatting to create a header row and place
+                                        the paragraph and picture next to each other on the same row
+                                    </p>
+                                    <figure class="codeBlock">
+                                        <figcaption><b>web page result</b></figcaption>
+                                    <img src="/images/blogPostImages/basicHTMLBootstrap.PNG">
+                                    </figure>
+
                                         <small><a href="#" title="">02 August, 2020</a></small>
                                     </div><!-- end meta -->
                                 </div><!-- end blog-box -->
