@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Site Metas -->
+    <title>Mauer Software - Software Developement blog</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Design fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons core CSS -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/style.css" rel="stylesheet">
+
+    <!-- Responsive styles for this template -->
+    <link href="/css/responsive.css" rel="stylesheet">
+
+    <!-- Colors for this template -->
+    <link href="/css/colors.css" rel="stylesheet">
+
+    <!-- Version Tech CSS for this template -->
+    <link href="/css/version/tech.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- load the nav content -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#nav").load("../commonPageSections/nav.html");
+        });
+    </script>
+    <!-- Load the common side pan -->
+    <script>
+        $(function(){
+            $("#sidePane").load("/commonPageSections/rightSidebar.html");
+        });
+    </script>
+    <!-- Load the common footer -->
+    <script>
+        $(function(){
+            $("#footer").load("/commonPageSections/footer.html");
+        });
+    </script>
+
+    <!-- google ad sense -->
+    <script data-ad-client="ca-pub-7100546225531904" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <link rel="shortcut icon" type="image/png" href="/images/version/mauerSoftware-favicon.png"/>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Include the navigation pane -->
+        <div id="nav"></div>
+        <div class="page-title lb single-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                        <h2><i class="fa fa-star bg-orange"></i>Blog Post <small class="hidden-xs-down hidden-sm-down"></small></h2>
+                    </div><!-- end col -->
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active">Home</li>
+                            <li class="breadcrumb-item"><a href="/AboutMe.html">About Me</a></li>
+                        </ol>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end page-title -->
+
+        <!-- Enter Blog post contents -->
+        <section class="section ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-list clearfix">
+
+                                <!-- Actual blog post content goes here  -->
+                                <div id="postContent"></div>
+                                <div class="blog-box row">
+                                    <div class="">
+                                        <div class="post-media">
+                                            <a href="#" title="">
+                                                <img src="" alt="" class="img-fluid">
+                                                <div class="hovereffect"></div>
+                                            </a>
+                                        </div><!-- end media -->
+                                    </div><!-- end col -->
+                                    <div class="blog-meta big-meta  col-lg-11 col-md-11">
+                                        <h4><a href="#" title="">Unix Philosophies</a></h4>
+                                        <h1>Introduction</h1>
+
+                                        <p class=MsoNormal>The U.S Bureau of Labor and Statistics lists Software
+                                        Developer as one of the highest ranking career paths, with a medium Pay of $107,510
+                                        and 10 year job growth outlook of 22% (much faster than average)(Bureau
+                                        of Labor Statistics). As more and more developers get brought on by companies
+                                        to create new software products, maintain old ones, and expand the
+                                        functionality to existing programs there becomes more and more need to make
+                                        software systems that can be easily understood, updated, and modified. I
+                                        believe the explosive growth of this industry over the past 40 years, and
+                                        continued expansion, owes great thanks to the Unix philosophies. Through this
+                                        report I will address the 3 key philosophies of UNIX that were summarized by
+                                        Peter H. Salus. Additionally I will dive into detail of how the programs
+                                        provided with Unix follow this philosophy, and finally I will dive into how
+                                        these programs adherence to the philosophies can be used to assist developers.</p>
+
+                                        <h1>What is the Unix Philosophy</h1>
+
+                                        <p class=MsoNormal>Back in 1994, the computer scientist Peter Henry Salus
+                                        summarized the Unix philosophy in his book A Quarter Century of UNIX. He
+                                        summarized this philosophy as Write programs that do one thing and do it well,
+                                        Write programs to work together, and Write programs to handle text streams,
+                                        because that is a universal interface(Salus). Write programs that do one
+                                        thing and do it well describes making small programs that can be easily
+                                        understood, edited, and tested. Write programs to work together describes how
+                                        programs should be developed to be building blocks of future programs that can
+                                        be reused without duplicate effort. Finally, Write programs to handle text
+                                        streams, because that is a universal interface encourages the concept of
+                                        common interface between programs and the choice of text streams avoid programmatic
+                                        incompatibility with things like binary input formats and user input.</p>
+
+                                        <h1>Standard Unix programs that follow these philosophies</h1>
+
+                                        <p class=MsoNormal>Next we will look into how some standard Unix programs adhear
+                                        to this philosophy. While discussing standard Unix programs for this section,
+                                        I will try to focus on those also used by Unix and Unix-like operating systems
+                                        such as Linux. At the heart of these operating systems, GNU core utilities, is
+                                        a great example of a set of programs that follows the Unix philosophies
+                                        mentioned previously. These core utils such as `ls` (for listing files), `grep`
+                                        (for searching text), and tar (archiving files) are a few examples of programs
+                                        that do one thing, can be connected in sequence to work together, and use test
+                                        streams to provide a universal interface between each of them. `ls` for
+                                        example, by default performs the simple task of printing the names of files in
+                                        a current working directory, ls can also receive input from various text stream
+                                        to perform tasks like listing only files of a certain type, and finally its
+                                        output comes in the form of a text stream that can be used as input for other
+                                        programs. </p>
+
+                                        <h1>What can be done using these programs</h1>
+
+                                        <p class=MsoNormal>In effort to further elaborate, how these philosophies work
+                                        together I would like to discuss how the 3 simple GNU core utilities mentioned
+                                        previously can be combined together to perform a multitude of tasks. For my
+                                        first example, let us pretend we have a file system directory with 100 files,
+                                        10 of those files have the work tom in their name, text containing the work
+                                        dog, and we want to compress those 10 files into a single tar archive. Due to
+                                        the adherence to the linux philosophies the three programs can be linked
+                                        together to perform this use case using the command `tar cvf netar.tar $(ls
+                                        *tom* | grep l dog *). This is done be providing the output of ls *tom* as a
+                                        text stream to grep which will provide a text stream of all the files from that
+                                        list with the contents of dog, and finally that text stream will be provided as
+                                        a text stream to tar which can archive that list of files together into a
+                                        singular package</p>
+
+                                        <span style='font-size:10.0pt;line-height:200%;font-family:"Times New Roman",serif'><br
+                                        clear=all style='page-break-before:always'>
+                                        </span>
+
+                                        <p class=MsoNormal style='margin-top:0in;line-height:200%'>&nbsp;</p>
+
+                                        <p class=MsoNormal>&nbsp;</p>
+
+                                        <h1>Why is this helpful to developers</h1>
+
+                                        <p class=MsoNormal>While the previous section, provides a very simplified case
+                                        of how a few GNU core utilities adherence to the Unix philosophy can turn
+                                        programs into building blocks that can be strung together to perform various
+                                        tasks. It should be easy to see how this philosophy can be used on any program
+                                        developed to create these building blocks, that can not only be easily
+                                        maintained but also strung together to solve an infinite number of problems of
+                                        varying complexity. While this building block concept is not unique in its
+                                        ability to solve these problems, it is unique in the way that it does so at a
+                                        small understandable component level. This enables current and future
+                                        developers to continually expand on the work done by developers of the past.
+                                        Thanks to the Unix philosophies this development of software as building blocks
+                                        has been a primary driver in the unprecedented expansion of this industry. </p>
+
+                                        <h1>Conclusion</h1>
+
+                                        <p class=MsoNormal>The intent of this paper was to inform developers on the
+                                        Linux philosophies, as well as demonstrate how they establish the basis of Unix
+                                        and Unix-like operating system applications. These Linux philosophies establish
+                                        the concepts of small, modular, and re-usable software designs that have been
+                                        proven to be an effective means of software development by allowing users to
+                                        take previously developed functionality and allocating it in new ways. .
+                                        Additional, these philosophies promote small simple programs which make them
+                                        easier for new developers to learn, diagnose bugs, and fix issues which
+                                        significantly improves maintainability. I hope that report, has convinced you
+                                        of the benefits of development using these core Unix philosophies. </p>
+
+                                        <span style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman",serif'><br
+                                        clear=all style='page-break-before:always'>
+                                        </span>
+
+                                        <p class=MsoNormal style='text-indent:0in;line-height:200%'><span
+                                        style='font-size:12.0pt;line-height:200%'>&nbsp;</span></p>
+
+                                        <p class=MsoNoSpacing style='margin-bottom:12.0pt'><span style='font-size:12.0pt;
+                                        line-height:200%'>&nbsp;</span></p>
+
+                                        <h1>Works Cited</h1>
+
+                                        <p>Bureau of Labor Statistics, U.S. Department of Labor. Occupational Outlook Handbook, Software Developers,. 01
+                                            September 2020. on the Internet at <a href="https://www.bls.gov/ooh/computer-and-informationtechnology/software-developers.htm.">
+                                                https://www.bls.gov/ooh/computer-and-informationtechnology/software-developers.html</a></p>
+
+                                        <p>Salus, Peter H. "A Quarter Century of UNIX." Salus, Peter H. A Quarter Century of UNIX. Addison Wesley, 1994</p>
+                                        </body>
+                                        </html>
+                                        <small><a href="#" title="">04 September, 2020</a></small>
+                                    </div><!-- end meta -->
+                                </div><!-- end blog-box -->
+                                <hr class="invis">
+
+                            </div><!-- end blog-list -->
+                        </div><!-- end page-wrapper -->
+
+                        <hr class="invis">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-start">
+                                        <li class="page-item">
+                                            <a class="page-link" href="/index.html">Prev</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+                        <div id="sidePane"></div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+
+        <!-- Include the footer pane -->
+        <div id="footer"></div>
+
+        <div class="dmtop">Scroll to Top</div>
+
+    </div><!-- end wrapper -->
+
+    <!-- Core JavaScript
+    ================================================== -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/custom.js"></script>
+
+</body>
+</html>
